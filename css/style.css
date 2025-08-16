@@ -1,0 +1,208 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.nav {
+    border-bottom: 1px solid #828282;
+    padding: 28px 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #828282;
+    transition: all 0.3s;
+}
+
+.menu__link:hover {
+    color: #070707;
+}
+
+.title {
+    margin: 12px 0 50px;
+}
+
+.about-me {
+    background-color: #F6F6F6;
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 34px;
+    color: #070707;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #070707;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 0 15px;
+}
+
+.about-text-last {
+    margin-bottom: 100px;
+}
+
+.skills {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 34px;
+    color: #070707;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.skills-text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #070707;
+}
+
+.skills-list {
+    text-align: center;
+}
+
+.skill-item {
+    display: inline-block;
+    width: 200px;
+    margin: 0 48px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.skill-logo {
+    display: block;
+    margin: 0 auto 25px;
+    width: auto;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.skill-logo:hover {
+    transform: scale(1.07);
+}
+
+.skill-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #828282;
+    margin: 0 0 60px;
+}
+
+.stars {
+    text-align: center;
+}
+
+.stars img {
+    display: inline-block;
+    margin: 0 5px;
+    width: 26px;
+    height: auto;
+}
+
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 34px;
+    color: #070707;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.portfolio-item {
+    margin-bottom: 70px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.portfolio-text {
+    font-size: 18px;
+    color: #070707;
+    text-decoration: underline;
+}
+
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 34px;
+    color: #070707;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contacts-text {
+    font-size: 18px;
+    color: #070707;
+    margin-bottom: 60px;
+}
+
+.send-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #4f4f4f;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+}
+
+.follow-text {
+    font-size: 18px;
+    color: #070707;
+    line-height: 1.4;
+    margin-bottom: 100px;
+}
