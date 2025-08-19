@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #3B3F45;
+  color: #fff;
+}
+
+.shopping-list {
+  padding-bottom: 45px;
+}
+
+.shopping-list-header {
+  background: #4A4F56;
+  text-align: center;
+  padding: 19px 12px;
+}
+
+.shopping-list-header h1 {
+  font-size: 24px;
+  margin: 6px;
+  color: #FF8984;
+}
+
+.shopping-list-header p {
+  font-size: 16px;
+  margin: 0;
+  color: #FF8984;
+}
+
+.panel {
+  width: 534px;
+  margin: 20px auto 0;
+}
+
+.items {
+  border-radius: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 45px;
+  padding: 0 12px;
+  transition: background .12s ease-in;
+  border-bottom: 2px solid rgba(255, 255, 255);
+}
+
+.item:nth-child(1), 
+.item:nth-child(3), 
+.item:nth-child(5) {
+  background: #88839E;
+}
+
+.item:nth-child(2), 
+.item:nth-child(6) {
+  background: #7A7593;
+}
+
+.item:nth-child(4) {
+  background: #625E77;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item:hover {
+  background: #5a566e;
+  box-shadow: inset 0 2px 0 white, inset 0 -2px 0 white;
+}
+
+.check {
+  appearance: none;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.check:checked {
+  background: #fff;
+}
+
+.check:checked::after {
+  content: "✔";
+  font-size: 16px;
+  color: #000000;
+}
+
+.item label {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.description {
+  font-size: 11px;
+  font-style: italic;
+}
+
+.description::before {
+  content: "(";
+}
+
+.description::after {
+  content: ")";
+}
+
+.check:checked + label {
+  text-decoration: line-through;
+  opacity: .45;
+}
+
+.footer {
+  margin-top: 45px;
+}
+
+.button {
+  width: 534px;
+  height: 45px;
+  border: none;
+  border-radius: 6px;
+  background: #4A4F56;
+  color: #FF8984;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.button:hover {
+  background: #3B3F45;
+  background: #625E77;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
