@@ -1,0 +1,132 @@
+* {
+    transition: all .1s ease-in;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    border: 25px solid #2B81AC;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #3399CC;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.main {
+    width: 1260px;
+    margin: 0 auto;
+    background: #3399CC;
+    padding: 60px 15px 119px 15px;
+}
+
+.weather-box {
+    width: 1170px;
+    height: 592px;
+    background: #3399CC;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 21px;
+    font-size: 34px;
+    transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+    color: #FFCC66;
+    transform: scale(1.01);
+}
+
+.weather-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 35px auto;
+    width: 1170px;
+    text-align: left;
+    font-size: 0;
+    border: 2px solid #fff;
+}
+
+.city {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #fff;
+    cursor: pointer;
+    height: 147px;
+    width: 25%;
+    padding: 26px;
+    line-height: 1.45;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.city:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.lisbon {
+    width: 50%;
+    background: #3399CC;
+}
+
+.paris {
+    background: #33CCCC;
+}
+
+.belgrade {
+    background: #996699;
+}
+
+.venice {
+    background: #C24747;
+}
+
+.telaviv {
+    background: #E2674A;
+}
+
+.cairo {
+    background: #FFCC66;
+}
+
+.newyork {
+    background: #99CC99;
+}
+
+.newdelhi {
+    background: #669999;
+}
+
+.sanfrancisco {
+    width: 50%;
+    background: #CC6699;
+}
+
+.tokyo {
+    background: #339966;
+}
+
+.sydney {
+    width: 100%;
+    background: #666699;
+}
+
+.note {
+    font-size: 16px;
+    text-align: left;
+}
