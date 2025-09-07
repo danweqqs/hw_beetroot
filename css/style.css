@@ -1,0 +1,270 @@
+@import url('./normalize.css');
+@import url('./vars.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: var(--main-font-size);
+    font-family: var(--main-font-family);
+    background: var(--main-background);
+    color: var(--main-font-color);
+}
+
+.main {
+    max-width: var(--container-width);
+    padding: 100px 15px;
+    margin: 0 auto;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.side {
+    min-width: 570px;
+    padding: 35px 35px 16px 35px;
+    background: #fff;
+    border-radius: var(--main-border-radius);
+}
+
+.title_2 {
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #1c1c1c;
+}
+
+.btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn_full {
+    width: 100%;
+}
+
+.btn_min {
+    width: 25%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+    margin-bottom: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col_half {
+    width: 50%;
+}
+
+.col_full {
+    width: 100%;
+}
+
+.label {
+    line-height: 1.47;
+    margin-bottom: 7px;
+}
+
+input,
+select {
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    outline: none;
+    margin-bottom: 12px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+select option[value=""] {
+  color: rgba(0,0,0,0.4); /* плейсхолдер напівпрозорий */
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus,
+select:focus {
+    border: 1px solid #007BFF;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.38;
+    color: #969696;
+}
+
+.gender {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.gender input[type="radio"] {
+    display: none;
+}
+
+.gender__check {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.gender__check::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #007BFF;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gender input[type="radio"]:checked+.gender__check::after {
+    opacity: 1;
+}
+
+.form-footer {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px;
+}
+
+.login-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.photo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #E4E4E4;
+}
+
+.photo-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.photo-upload {
+    width: 138px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 7px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.photo-upload img {
+    width: 16px;
+    height: 16px;
+}
+
+.photo-delete {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.photo-delete img {
+    width: 16px;
+    height: 16px;
+}
+
+.photo-note {
+  margin-top: 9px;
+  font-size: 13px;
+  color: #969696;
+}

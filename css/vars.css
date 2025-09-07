@@ -1,0 +1,13 @@
+:root {
+    --main-font-family: 'Roboto', sans-serif;
+    --main-font-size: 15px;
+    --main-font-color: #545454;
+
+    --main-background: #F7F7F7;
+
+    --container-width: 1200px;
+
+    --background-btn: #007BFF;
+
+    --main-border-radius: 6px;
+}

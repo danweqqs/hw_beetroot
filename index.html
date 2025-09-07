@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="section">
+            <div class="side">
+                <h2 class="title_2">Create an Account</h2>
+                <form class="form" action="#" method="post">
+                    <div class="row">
+                        <div class="col col_half">
+                            <label for="first-name" class="label">First Name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"
+                                required>
+                        </div>
+                        <div class="col col_half">
+                            <label for="last-name" class="label">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col_full">
+                            <label for="mail" class="label">E-mail</label>
+                            <input type="email" id="mail" name="email" placeholder="example@mail.com" required>
+                            <p class="text">We'll never share your email with anyone else.</p>
+                        </div>
+                    </div>
+
+                    <div class="form__gender gender">
+                        <label>
+                            <input type="radio" name="gender" value="male" required>
+                            <span class="gender__check"></span> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            <span class="gender__check"></span> Female
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col_half">
+                            <label for="country" class="label">Country</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select</option>
+                                <option value="ua">Ukraine</option>
+                                <option value="us">USA</option>
+                                <option value="pl">Poland</option>
+                            </select>
+                        </div>
+                        <div class="col col_half">
+                            <label for="city" class="label">City</label>
+                            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <button type="submit" class="btn btn_full">Sign Up</button>
+                    </div>
+
+                    <p class="form-footer">
+                        By clicking the 'Sign Up' button, you confirm that you accept our <br>
+                        <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                    </p>
+                    <hr>
+                    <div class="form-footer login-footer">
+                        <span>Have an account?</span>
+                        <a href="./index_profile.html">Log In</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
