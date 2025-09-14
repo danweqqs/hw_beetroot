@@ -6,11 +6,11 @@
     font-weight: 600;
     color: $text-dark;
     transition: 0.3s;
-    text-decoration: none; // прибираємо підкреслення
+    text-decoration: none;
 
     &:hover {
         background: $primary-color;
         color: #fff;
-        text-decoration: none; // і тут теж на всяк випадок
+        text-decoration: none;
     }
 }
