@@ -1,0 +1,203 @@
+@import 'vars';
+@import 'mixins';
+@import 'extends';
+
+body {
+    font-family: $font-main;
+    background: #FFFFFF;
+    color: $text-dark;
+}
+
+.our-team {
+    padding: 80px 0;
+    text-align: center;
+
+    .subtitle {
+        font-size: 18px;
+        color: $text-light;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        @include section-title;
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .divider {
+        @include flex-center;
+
+        .line {
+            width: 210px;
+            height: 2px;
+            background: $primary-color;
+            margin: 0 5px;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+        }
+    }
+
+    .team-member {
+        @include flex-center;
+        margin-top: 50px;
+
+        .photo {
+            position: relative;
+            display: inline-block;
+
+            img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                border: 1px solid $primary-color;
+                position: relative;
+                z-index: 2;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border: 1px solid $primary-color;
+                border-right: none;
+                border-bottom: none;
+                top: 0;
+                left: 0;
+                transform: translate(-15px, -15px);
+                z-index: 1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border: 1px solid $primary-color;
+                border-left: none;
+                border-bottom: none;
+                top: 0;
+                right: 0;
+                transform: translate(15px, -15px);
+                z-index: 1;
+            }
+
+            .corner::before {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border: 1px solid $primary-color;
+                border-right: none;
+                border-top: none;
+                bottom: 0;
+                left: 0;
+                transform: translate(-15px, 15px);
+                z-index: 1;
+            }
+
+            .corner::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border: 1px solid $primary-color;
+                border-left: none;
+                border-top: none;
+                bottom: 0;
+                right: 0;
+                transform: translate(15px, 15px);
+                z-index: 1;
+            }
+        }
+
+        .center-line {
+            width: 1px;
+            height: 560px;
+            background: $primary-color;
+            margin: 40px 85px;
+        }
+    }
+
+    .info {
+        max-width: 400px;
+        text-align: center;
+
+        .name {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 2px;
+                background: $primary-color;
+                margin: 30px auto;
+            }
+        }
+
+        .position {
+            font-size: 24px;
+            color: $text-light;
+            margin-bottom: 30px;
+        }
+
+        .socials {
+            margin-bottom: 49px;
+
+            a {
+                display: inline-block;
+                margin: 0 5px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .desc {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .lines {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+
+            span {
+                display: block;
+                height: 4px;
+                background: $primary-color;
+                margin: 0 5px;
+
+                &:first-child,
+                &:last-child {
+                    width: 10px;
+                }
+
+                &.long {
+                    width: 20px;
+                }
+            }
+        }
+
+        .btn {
+            @extend %btn;
+            text-decoration: none;
+        }
+    }
+}
