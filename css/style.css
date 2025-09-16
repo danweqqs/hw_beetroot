@@ -1,0 +1,360 @@
+body {
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-main);
+    font-size: var(--font-size-base);
+    color: var(--color-main);
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+.nav {
+    border-bottom: 1px solid var(--color-secondary);
+    padding: 28px 155px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-main);
+    transition: all 0.3s;
+}
+
+.menu__link:hover {
+    color: var(--color-main);
+    font-weight: var(--font-weight-bold);
+}
+
+.hero__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+
+.hero__info {
+    flex: 1;
+    text-align: left;
+}
+
+.title {
+    margin: 0;
+    font-weight: var(--font-weight-bold);
+}
+
+.hero__center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.author-description {
+    font-size: 18px;
+    font-weight: var(--font-weight-main);
+    color: var(--color-main);
+}
+
+.lang-switch {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    padding-bottom: 5px;
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+    margin-right: 20px;
+}
+
+.lang-ukr {
+    color: var(--color-secondary);
+}
+
+.hero__img {
+    width: var(--container-width);
+    height: 387px;
+    margin: 0 auto 100px;
+    overflow: hidden;
+}
+
+.hero__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.about-me {
+    background-color: var(--color-bg-light);
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 34px;
+    color: var(--color-main);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 18px;
+    color: var(--color-main);
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 0 15px;
+    font-weight: var(--font-weight-main);
+}
+
+.about-text-last {
+    margin-bottom: 100px;
+}
+
+.skills {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 34px;
+    color: var(--color-main);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 30px;
+}
+
+.skills-text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: var(--color-main);
+    font-weight: var(--font-weight-main);
+}
+
+.skills-list {
+    text-align: center;
+}
+
+.skill-item {
+    display: inline-block;
+    width: 200px;
+    margin: 0 48px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.skill-logo {
+    display: block;
+    margin: 0 auto 25px;
+    width: auto;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.skill-logo:hover {
+    transform: scale(1.07);
+}
+
+.skill-title {
+    font-weight: var(--font-weight-bold);
+    font-size: 14px;
+    color: var(--color-secondary);
+    margin: 0 0 60px;
+}
+
+.stars {
+    text-align: center;
+}
+
+.stars img {
+    display: inline-block;
+    margin: 0 5px;
+    width: 26px;
+    height: auto;
+}
+
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--color-bg-light);
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 34px;
+    color: var(--color-main);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 50px;
+}
+
+.portfolio-item {
+    margin-bottom: 70px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.portfolio-text {
+    font-size: 18px;
+    color: var(--color-main);
+    text-decoration: underline;
+    font-weight: var(--font-weight-main);
+}
+
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 34px;
+    color: var(--color-main);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+}
+
+.contacts-text {
+    font-size: 18px;
+    color: var(--color-main);
+    margin-bottom: 60px;
+    font-weight: var(--font-weight-main);
+}
+
+.send-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    border-radius: 25px;
+    font-weight: var(--font-weight-main);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #4f4f4f;
+    transform: scale(1.05);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.5;
+}
+
+.follow-text {
+    font-size: 18px;
+    color: var(--color-main);
+    line-height: 1.4;
+    margin-bottom: 100px;
+    font-weight: var(--font-weight-main);
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .about-me h2,
+    .skills h2,
+    .portfolio h2,
+    .contacts h2 {
+        font-size: 26px;
+    }
+
+    .about-text,
+    .skills-text,
+    .portfolio-text,
+    .contacts-text,
+    .follow-text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .send-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px;
+    }
+
+    .skill-item {
+        width: 100%;
+        margin: 0 auto 30px;
+        display: block;
+    }
+
+    .social-icons {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+    .container {
+        width: 90%;
+    }
+
+    .about-me h2,
+    .skills h2,
+    .portfolio h2,
+    .contacts h2 {
+        font-size: 30px;
+    }
+
+    .about-text,
+    .skills-text,
+    .portfolio-text,
+    .contacts-text,
+    .follow-text {
+        font-size: 16px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 40px;
+    }
+
+    .skill-item {
+        margin: 0;
+    }
+}

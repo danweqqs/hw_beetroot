@@ -1,0 +1,14 @@
+:root {
+    --font-main: 'Gilroy', sans-serif;
+    --font-weight-main: 500;
+    --font-weight-bold: 700;
+
+    --font-size-base: 18px;
+    --color-main: #070707;
+    --color-secondary: #828282;
+    --color-bg-light: #F6F6F6;
+    --color-white: #fff;
+    --color-black: #000;
+
+    --container-width: 970px;
+}
