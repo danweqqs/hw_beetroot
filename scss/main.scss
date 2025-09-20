@@ -1,0 +1,157 @@
+@import 'vars';
+@import 'mixins';
+
+.case-study {
+    @include container;
+    text-align: left;
+
+    &__label {
+        font-family: $font-lato;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        margin: 38px 0;
+    }
+
+    &__title {
+        font-family: $font-redhat;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        margin-bottom: 70px;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto 90px;
+        max-width: 100%;
+    }
+}
+
+.section {
+    @include container;
+    text-align: left;
+
+    &+.section {
+        margin-top: 90px;
+    }
+
+    &__title {
+        font-family: $font-redhat;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-black;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        max-width: 570px;
+
+        &_full {
+            max-width: 100%;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-family: $font-lato;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #565656;
+        margin-bottom: 20px;
+    }
+}
+
+.footer {
+    background: #F4F4F4;
+    margin-top: 90px;
+
+    &__inner {
+        @include container;
+        padding: 32px 0;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    &__title {
+        font-family: $font-redhat;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        margin: 70px 0 30px;
+    }
+
+    &__contact,
+    &__link {
+        font-family: $font-lato;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $color-gray;
+        margin: 0 0 15px;
+        text-decoration: none;
+        display: block;
+    }
+
+    &__social {
+        display: flex;
+        gap: 23px;
+        margin-top: 125px;
+    }
+
+    &__social-link {
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border: 1px solid #565656;
+        border-radius: 0;
+        display: grid;
+        place-items: center;
+        color: #565656;
+        transition: background .2s ease, color .2s ease;
+    }
+
+    &__icon svg {
+        width: 24px;
+        height: 24px;
+        display: block;
+        fill: currentColor;
+    }
+
+    &__social-link:hover,
+    &__social-link:focus-visible {
+        background: #565656;
+        color: #fff;
+    }
+
+    &__copy {
+        margin: 24px 0 0;
+        text-align: center;
+        font-family: $font-lato;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-gray;
+    }
+}

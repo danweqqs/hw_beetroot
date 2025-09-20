@@ -1,0 +1,15 @@
+// Вирівнювання flex по центру
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Текстовий абзац
+%paragraph {
+    font-family: $font-lato;
+    font-weight: 400;
+    font-size: $fs-base;
+    line-height: $lh-base;
+    color: $color-text;
+}
