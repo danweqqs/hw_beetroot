@@ -24,12 +24,6 @@
         color: $color-black;
         margin-bottom: 70px;
     }
-
-    &__img {
-        display: block;
-        margin: 0 auto 90px;
-        max-width: 100%;
-    }
 }
 
 .section {
@@ -153,5 +147,114 @@
         line-height: 166%;
         letter-spacing: 0.1em;
         color: $color-gray;
+        color: $color-black;
+    }
+}
+
+// tablet 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .case-study {
+        &__label {
+            font-size: 16px;
+        }
+
+        &__title {
+            font-size: 33px;
+            line-height: 44px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .section {
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            font-size: 19px;
+        }
+    }
+
+    .footer {
+        &__inner {
+            padding: 28px 0;
+        }
+
+        &__top {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+        }
+
+        &__title {
+            margin: 0 0 20px;
+        }
+
+        &__social {
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        &__copy {
+            margin: 40px 0 0;
+            text-align: center;
+        }
+    }
+}
+
+// mobile 
+@media screen and (max-width: 767px) {
+    .case-study {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .section {
+        &__title {
+            font-size: 26px;
+            line-height: 34px;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .footer {
+        &__top {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__contact,
+        &__link {
+            font-size: 18px;
+        }
+
+        &__social {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        &__copy {
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
     }
 }

@@ -22,11 +22,6 @@
   color: #000;
   margin-bottom: 70px;
 }
-.case-study__img {
-  display: block;
-  margin: 0 auto 90px;
-  max-width: 100%;
-}
 
 .section {
   max-width: 1170px;
@@ -137,4 +132,81 @@
   line-height: 166%;
   letter-spacing: 0.1em;
   color: #565656;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .case-study__label {
+    font-size: 16px;
+  }
+  .case-study__title {
+    font-size: 33px;
+    line-height: 44px;
+    margin-bottom: 50px;
+  }
+  .section__title {
+    font-size: 28px;
+  }
+  .section__text {
+    font-size: 19px;
+  }
+  .footer__inner {
+    padding: 28px 0;
+  }
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  .footer__title {
+    margin: 0 0 20px;
+  }
+  .footer__social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footer__copy {
+    margin: 40px 0 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .case-study__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .section__title {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 24px;
+  }
+  .section__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer__title {
+    font-size: 32px;
+  }
+  .footer__contact, .footer__link {
+    font-size: 18px;
+  }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .footer__copy {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
