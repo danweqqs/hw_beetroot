@@ -1,0 +1,22 @@
+@use 'vars' as vars;
+
+%title {
+    font-family: vars.$font-secondary;
+    font-weight: vars.$font-weight-bold;
+    color: vars.$color-text-main;
+}
+
+%paragraph {
+    font-family: vars.$font-primary;
+    font-weight: vars.$font-weight-medium;
+    color: vars.$color-text-secondary;
+}
+
+%btn {
+    border-radius: 50px;
+    font-family: vars.$font-primary;
+    font-weight: vars.$font-weight-medium;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}

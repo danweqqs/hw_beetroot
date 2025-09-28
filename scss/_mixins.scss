@@ -1,0 +1,30 @@
+@use 'vars' as vars;
+
+@mixin nav-btn-text($color) {
+    font-family: vars.$font-primary;
+    font-weight: vars.$font-weight-medium;
+    font-size: vars.$font-size-nav;
+    line-height: 160%;
+    color: $color;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+@mixin demo-btn {
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid vars.$color-primary;
+    font-family: vars.$font-primary;
+    font-weight: vars.$font-weight-medium;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background 0.2s, color 0.2s;
+}
